@@ -1,0 +1,14 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "vanilla_taa:item/iron_spear"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "vanilla_taa:using": 1
+      },
+      "model": "vanilla_taa:item/iron_spear_charging"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "item.vanilla_taa.wooden_dagger": "Wooden Dagger",
+  "item.vanilla_taa.stone_dagger": "Stone Dagger",
+  "item.vanilla_taa.iron_dagger": "Iron Dagger",
+  "item.vanilla_taa.golden_dagger": "Golden Dagger",
+  "item.vanilla_taa.diamond_dagger": "Diamond Dagger",
+  "item.vanilla_taa.netherite_dagger": "Netherite Dagger",
+
+  "item.vanilla_taa.wooden_battle_axe": "Wooden Battle Axe",
+  "item.vanilla_taa.stone_battle_axe": "Stone Battle Axe",
+  "item.vanilla_taa.iron_battle_axe": "Iron Battle Axe",
+  "item.vanilla_taa.golden_battle_axe": "Golden Battle Axe",
+  "item.vanilla_taa.diamond_battle_axe": "Diamond Battle Axe",
+  "item.vanilla_taa.netherite_battle_axe": "Netherite Battle Axe",
+
+  "item.vanilla_taa.wooden_spear": "Wooden Spear",
+  "item.vanilla_taa.stone_spear": "Stone Spear",
+  "item.vanilla_taa.iron_spear": "Iron Spear",
+  "item.vanilla_taa.golden_spear": "Golden Spear",
+  "item.vanilla_taa.diamond_spear": "Diamond Spear",
+  "item.vanilla_taa.netherite_spear": "Netherite Spear",
+
+  "creativetab.weapons_tab": "Vanilla+ Tools & Arms: Weapons"
+}

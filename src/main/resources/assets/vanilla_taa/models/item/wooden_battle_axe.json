@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "vanilla_taa:item/wooden_battle_axe"
+  }
+}
