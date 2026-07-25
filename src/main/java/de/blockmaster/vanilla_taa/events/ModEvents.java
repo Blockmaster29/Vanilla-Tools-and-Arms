@@ -6,9 +6,12 @@ import de.blockmaster.vanilla_taa.items.BattleAxeItem;
 import de.blockmaster.vanilla_taa.items.DaggerItem;
 import de.blockmaster.vanilla_taa.items.ModItems;
 import de.blockmaster.vanilla_taa.items.SpearItem;
+import net.minecraft.client.Minecraft;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.monster.Zombie;
+import net.minecraft.world.entity.monster.ZombifiedPiglin;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -27,6 +30,7 @@ import net.minecraftforge.event.AnvilUpdateEvent;
 import net.minecraftforge.event.ItemAttributeModifierEvent;
 import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.event.entity.EntityJoinLevelEvent;
+import net.minecraftforge.event.entity.living.MobSpawnEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -214,16 +218,18 @@ public class ModEvents {
     }
 
     @SubscribeEvent
-    public static void onMobSpawn(EntityJoinLevelEvent event) {
+    public static void onMobSpawn(MobSpawnEvent.FinalizeSpawn event) {
         if (!(event.getEntity() instanceof Zombie zombie)) {
+            return;
+        }
+
+        if (event.getEntity() instanceof ZombifiedPiglin) {
             return;
         }
 
         zombie.goalSelector.addGoal(1, new ThowSpearGoal(zombie));
 
-        DifficultyInstance difficulty = event.getLevel().getCurrentDifficultyAt(event.getEntity().blockPosition());
-
-        float chance = 0.05f + difficulty.getSpecialMultiplier() * 0.05f;
+        float chance = 0.05f;
 
         if (zombie.getRandom().nextFloat() < chance) {
             Item[] items = new Item[2];

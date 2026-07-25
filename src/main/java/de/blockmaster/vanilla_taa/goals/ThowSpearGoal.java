@@ -1,8 +1,6 @@
 package de.blockmaster.vanilla_taa.goals;
 
 import de.blockmaster.vanilla_taa.items.SpearItem;
-import net.minecraft.client.Minecraft;
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;

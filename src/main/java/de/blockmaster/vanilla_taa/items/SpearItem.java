@@ -5,8 +5,6 @@ import com.google.common.collect.Multimap;
 import de.blockmaster.vanilla_taa.entitys.ModEntityTypes;
 import de.blockmaster.vanilla_taa.entitys.ThrownSpearEntity;
 import de.blockmaster.vanilla_taa.util.ModToolActions;
-import net.minecraft.client.Minecraft;
-import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
