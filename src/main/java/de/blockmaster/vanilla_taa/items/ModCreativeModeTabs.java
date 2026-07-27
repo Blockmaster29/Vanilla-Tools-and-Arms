@@ -23,6 +23,9 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.STONE_DAGGER.get());
                         pOutput.accept(ModItems.STONE_BATTLE_AXE.get());
                         pOutput.accept(ModItems.STONE_SPEAR.get());
+                        pOutput.accept(ModItems.COPPER_DAGGER.get());
+                        pOutput.accept(ModItems.COPPER_BATTLE_AXE.get());
+                        pOutput.accept(ModItems.COPPER_SPEAR.get());
                         pOutput.accept(ModItems.IRON_DAGGER.get());
                         pOutput.accept(ModItems.IRON_BATTLE_AXE.get());
                         pOutput.accept(ModItems.IRON_SPEAR.get());
@@ -35,6 +38,22 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.NETHERITE_DAGGER.get());
                         pOutput.accept(ModItems.NETHERITE_BATTLE_AXE.get());
                         pOutput.accept(ModItems.NETHERITE_SPEAR.get());
+                    })
+                    .build());
+
+    public static final RegistryObject<CreativeModeTab> COPPER_TAB = CREATIVE_MODE_TABS.register("copper_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.COPPER_PICKAXE.get()))
+                    .title(Component.translatable("creativetab.copper_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModItems.COPPER_SWORD.get());
+                        pOutput.accept(ModItems.COPPER_SHOVEL.get());
+                        pOutput.accept(ModItems.COPPER_PICKAXE.get());
+                        pOutput.accept(ModItems.COPPER_AXE.get());
+                        pOutput.accept(ModItems.COPPER_HOE.get());
+                        pOutput.accept(ModItems.COPPER_HELMET.get());
+                        pOutput.accept(ModItems.COPPER_CHESTPLATE.get());
+                        pOutput.accept(ModItems.COPPER_LEGGINGS.get());
+                        pOutput.accept(ModItems.COPPER_BOOTS.get());
                     })
                     .build());
 

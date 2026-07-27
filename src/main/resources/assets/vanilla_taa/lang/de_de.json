@@ -1,0 +1,38 @@
+{
+  "item.vanilla_taa.wooden_dagger": "Holzdolch",
+  "item.vanilla_taa.stone_dagger": "Steindolch",
+  "item.vanilla_taa.copper_dagger": "Kupferdolch",
+  "item.vanilla_taa.iron_dagger": "Eisendolch",
+  "item.vanilla_taa.golden_dagger": "Golddolch",
+  "item.vanilla_taa.diamond_dagger": "Diamantdolch",
+  "item.vanilla_taa.netherite_dagger": "Netheritdolch",
+
+  "item.vanilla_taa.wooden_battle_axe": "Holzkampfaxt",
+  "item.vanilla_taa.stone_battle_axe": "Steinkampfaxt",
+  "item.vanilla_taa.copper_battle_axe": "Kupferkampfaxt",
+  "item.vanilla_taa.iron_battle_axe": "Eisenkampfaxt",
+  "item.vanilla_taa.golden_battle_axe": "Goldkampfaxt",
+  "item.vanilla_taa.diamond_battle_axe": "Diamantkampfaxt",
+  "item.vanilla_taa.netherite_battle_axe": "Netheritkampfaxt",
+
+  "item.vanilla_taa.wooden_spear": "Holzspeer",
+  "item.vanilla_taa.stone_spear": "Steinspeer",
+  "item.vanilla_taa.copper_spear": "Kupferspeer",
+  "item.vanilla_taa.iron_spear": "Eisenspeer",
+  "item.vanilla_taa.golden_spear": "Goldspeer",
+  "item.vanilla_taa.diamond_spear": "Diamantspeer",
+  "item.vanilla_taa.netherite_spear": "Netheritspeer",
+
+  "item.vanilla_taa.copper_sword": "Kupferschwert",
+  "item.vanilla_taa.copper_shovel": "Kupferschaufel",
+  "item.vanilla_taa.copper_pickaxe": "Kupferspitzhacke",
+  "item.vanilla_taa.copper_axe": "Kupferaxt",
+  "item.vanilla_taa.copper_hoe": "Kupferfeldhacke",
+  "item.vanilla_taa.copper_helmet": "Kupferhelm",
+  "item.vanilla_taa.copper_chestplate": "Kupferharnisch",
+  "item.vanilla_taa.copper_leggings": "Kupferbeinschutz",
+  "item.vanilla_taa.copper_boots": "Kupferstiefel",
+
+  "creativetab.weapons_tab": "Vanilla+ Tools & Arms: Waffen",
+  "creativetab.copper_tab": "Vanilla+ Tools & Arms: Kupfer"
+}

@@ -8,8 +8,6 @@ import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.*;
-import net.minecraft.world.item.enchantment.Enchantment;
-import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraftforge.common.ForgeMod;
 
 import java.util.UUID;
@@ -47,19 +45,6 @@ public class DaggerItem extends SwordItem implements Vanishable {
 
         defaultModifiers = builder.build();
 
-    }
-
-    @Override
-    public boolean canApplyAtEnchantingTable(ItemStack stack, Enchantment enchantment) {
-        return enchantment == Enchantments.BANE_OF_ARTHROPODS
-                || enchantment == Enchantments.SHARPNESS
-                || enchantment == Enchantments.SMITE
-                || enchantment == Enchantments.FIRE_ASPECT
-                || enchantment == Enchantments.KNOCKBACK
-                || enchantment == Enchantments.MOB_LOOTING
-                || enchantment == Enchantments.MENDING
-                || enchantment == Enchantments.UNBREAKING
-                || enchantment == Enchantments.VANISHING_CURSE;
     }
 
     @Override

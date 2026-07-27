@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "vanilla_taa:item/copper_shovel"
+  }
+}

@@ -38,46 +38,6 @@ import java.util.Map;
 
 @Mod.EventBusSubscriber(modid = Vanilla_taa.MODID)
 public class ModEvents {
-    private static boolean isAllowedForSpearItem(Enchantment enchantment) {
-        return enchantment == Enchantments.BANE_OF_ARTHROPODS
-                || enchantment == Enchantments.SHARPNESS
-                || enchantment == Enchantments.SMITE
-                || enchantment == Enchantments.FIRE_ASPECT
-                || enchantment == Enchantments.KNOCKBACK
-                || enchantment == Enchantments.MOB_LOOTING
-                || enchantment == Enchantments.MENDING
-                || enchantment == Enchantments.UNBREAKING
-                || enchantment == Enchantments.VANISHING_CURSE
-                || enchantment == Enchantments.LOYALTY;
-    }
-
-    private static boolean isAllowedForDaggerItem(Enchantment enchantment) {
-        return enchantment == Enchantments.BANE_OF_ARTHROPODS
-                || enchantment == Enchantments.SHARPNESS
-                || enchantment == Enchantments.SMITE
-                || enchantment == Enchantments.FIRE_ASPECT
-                || enchantment == Enchantments.KNOCKBACK
-                || enchantment == Enchantments.MOB_LOOTING
-                || enchantment == Enchantments.MENDING
-                || enchantment == Enchantments.UNBREAKING
-                || enchantment == Enchantments.VANISHING_CURSE;
-    }
-
-    private static boolean isAllowedForBattleAxeItem(Enchantment enchantment) {
-        return enchantment == Enchantments.BANE_OF_ARTHROPODS
-                || enchantment == Enchantments.SHARPNESS
-                || enchantment == Enchantments.SMITE
-                || enchantment == Enchantments.FIRE_ASPECT
-                || enchantment == Enchantments.KNOCKBACK
-                || enchantment == Enchantments.MOB_LOOTING
-                || enchantment == Enchantments.MENDING
-                || enchantment == Enchantments.UNBREAKING
-                || enchantment == Enchantments.VANISHING_CURSE
-                || enchantment == Enchantments.BLOCK_EFFICIENCY
-                || enchantment == Enchantments.BLOCK_FORTUNE
-                || enchantment == Enchantments.SILK_TOUCH
-                || enchantment == Enchantments.SWEEPING_EDGE;
-    }
 
     @SubscribeEvent
     public static void onItemAttributeModifiers(ItemAttributeModifierEvent event) {
@@ -93,52 +53,6 @@ public class ModEvents {
                 ForgeMod.ENTITY_REACH.get(),
                 SpearItem.REACH_MODIFIER
         );
-    }
-
-    @SubscribeEvent
-    public static void onAnvilUpdate(AnvilUpdateEvent event) {
-        ItemStack left = event.getLeft();
-        ItemStack right = event.getRight();
-
-        if (!right.is(Items.ENCHANTED_BOOK)) {
-            return;
-        }
-
-        if (left.getItem() instanceof SpearItem) {
-            Map<Enchantment, Integer> enchants =
-                    EnchantmentHelper.getEnchantments(right);
-
-            for (Enchantment enchantment : enchants.keySet()) {
-                if (!isAllowedForSpearItem(enchantment)) {
-                    event.setCanceled(true);
-                    return;
-                }
-            }
-        }
-
-        if (left.getItem() instanceof DaggerItem) {
-            Map<Enchantment, Integer> enchants =
-                    EnchantmentHelper.getEnchantments(right);
-
-            for (Enchantment enchantment : enchants.keySet()) {
-                if (!isAllowedForDaggerItem(enchantment)) {
-                    event.setCanceled(true);
-                    return;
-                }
-            }
-        }
-
-        if (left.getItem() instanceof BattleAxeItem) {
-            Map<Enchantment, Integer> enchants =
-                    EnchantmentHelper.getEnchantments(right);
-
-            for (Enchantment enchantment : enchants.keySet()) {
-                if (!isAllowedForBattleAxeItem(enchantment)) {
-                    event.setCanceled(true);
-                    return;
-                }
-            }
-        }
     }
 
     @SubscribeEvent

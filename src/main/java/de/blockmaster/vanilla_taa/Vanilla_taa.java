@@ -35,10 +35,10 @@ public class Vanilla_taa {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
             event.enqueueWork(() -> {
                 ModItemProperties.register(ModItems.WOODEN_SPEAR.get());
                 ModItemProperties.register(ModItems.STONE_SPEAR.get());
+                ModItemProperties.register(ModItems.COPPER_SPEAR.get());
                 ModItemProperties.register(ModItems.IRON_SPEAR.get());
                 ModItemProperties.register(ModItems.GOLDEN_SPEAR.get());
                 ModItemProperties.register(ModItems.DIAMOND_SPEAR.get());

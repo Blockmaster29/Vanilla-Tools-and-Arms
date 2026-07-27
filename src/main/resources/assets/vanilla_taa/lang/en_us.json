@@ -1,6 +1,7 @@
 {
   "item.vanilla_taa.wooden_dagger": "Wooden Dagger",
   "item.vanilla_taa.stone_dagger": "Stone Dagger",
+  "item.vanilla_taa.copper_dagger": "Copper Dagger",
   "item.vanilla_taa.iron_dagger": "Iron Dagger",
   "item.vanilla_taa.golden_dagger": "Golden Dagger",
   "item.vanilla_taa.diamond_dagger": "Diamond Dagger",
@@ -8,6 +9,7 @@
 
   "item.vanilla_taa.wooden_battle_axe": "Wooden Battle Axe",
   "item.vanilla_taa.stone_battle_axe": "Stone Battle Axe",
+  "item.vanilla_taa.copper_battle_axe": "Copper Battle Axe",
   "item.vanilla_taa.iron_battle_axe": "Iron Battle Axe",
   "item.vanilla_taa.golden_battle_axe": "Golden Battle Axe",
   "item.vanilla_taa.diamond_battle_axe": "Diamond Battle Axe",
@@ -15,10 +17,22 @@
 
   "item.vanilla_taa.wooden_spear": "Wooden Spear",
   "item.vanilla_taa.stone_spear": "Stone Spear",
+  "item.vanilla_taa.copper_spear": "Copper Spear",
   "item.vanilla_taa.iron_spear": "Iron Spear",
   "item.vanilla_taa.golden_spear": "Golden Spear",
   "item.vanilla_taa.diamond_spear": "Diamond Spear",
   "item.vanilla_taa.netherite_spear": "Netherite Spear",
 
-  "creativetab.weapons_tab": "Vanilla+ Tools & Arms: Weapons"
+  "item.vanilla_taa.copper_sword": "Copper Sword",
+  "item.vanilla_taa.copper_shovel": "Copper Shovel",
+  "item.vanilla_taa.copper_pickaxe": "Copper Pickaxe",
+  "item.vanilla_taa.copper_axe": "Copper Axe",
+  "item.vanilla_taa.copper_hoe": "Copper Hoe",
+  "item.vanilla_taa.copper_helmet": "Copper Helmet",
+  "item.vanilla_taa.copper_chestplate": "Copper Chestplate",
+  "item.vanilla_taa.copper_leggings": "Copper Leggings",
+  "item.vanilla_taa.copper_boots": "Copper Boots",
+
+  "creativetab.weapons_tab": "Vanilla+ Tools & Arms: Weapons",
+  "creativetab.copper_tab": "Vanilla+ Tools & Arms: Copper"
 }
